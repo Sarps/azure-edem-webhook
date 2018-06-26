@@ -1,0 +1,20 @@
+{
+  "name": "edem-webhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmanuel Oppong-Sarpong",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dialogflow": "^4.0.3",
+    "dialogflow-fulfillment": "0.3.0-beta.3",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "soap": "^0.19.0",
+    "string-template": "^1.0.0"
+  }
+}
