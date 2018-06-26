@@ -5,10 +5,12 @@ const moment = require('moment');
 
 module.exports = function (context, req) {
 
+    context.log(req.body);
+
     context.bindings.table = {
         "partitionKey": "TestUser",
-        "rowKey": req.session,
-        "Name": req.queryResult.action
+        "rowKey": req.body.session,
+        "Name": req.body.queryResult.action
     }
 
     var agent = new WebhookClient({ request: req, response: context.res });
